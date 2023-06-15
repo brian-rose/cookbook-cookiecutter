@@ -28,6 +28,8 @@ Things you may want to customize:
 
 Then go ahead and add any notebooks, and make sure to update the `_toc.yml` file appropriately.
 
+Edit the `environment.yml` file to add any necessary packages that your notebooks need.
+
 To publish your new Cookbook on GitHub, there are a few steps:
 
 1. Initialize a new git repo in your new coobook directory and commit all the new files.
