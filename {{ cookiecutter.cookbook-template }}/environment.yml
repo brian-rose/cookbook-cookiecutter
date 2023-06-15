@@ -1,4 +1,4 @@
-name: cookbook-dev
+name: {{ cookiecutter.environment_name }}
 channels:
   - conda-forge
 dependencies:

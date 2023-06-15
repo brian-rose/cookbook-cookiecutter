@@ -1,13 +1,13 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: Project Pythia Cookbook Template
-author: the <a href="https://projectpythia.org/">Project Pythia</a> Community
+title: {{ cookiecutter.project_name }}
+author: {{ cookiecutter.copyright_name }}
 logo: notebooks/images/logos/pythia_logo-white-rtext.svg
-email: projectpythia@ucar.edu
-copyright: "2022"
+email: {{ cookiecutter.email }}
+copyright: "2023"
 
-description: A sample cookbook description.
+description: {{ cookiecutter.short_description }}
 thumbnail: thumbnail.png
 tags:
   domains:
@@ -44,7 +44,7 @@ sphinx:
     html_permalinks_icon: '<i class="fas fa-link"></i>'
     html_theme_options:
       home_page_in_toc: true
-      repository_url: https://github.com/ProjectPythia/cookbook-template/ # Online location of your book
+      repository_url: {{ cookiecutter.repo_url }} # Online location of your book
       repository_branch: main # Which branch of the repository should be used when creating links (optional)
       use_issues_button: true
       use_repository_button: true
