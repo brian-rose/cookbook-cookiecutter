@@ -7,6 +7,7 @@ on:
       - requested
       - completed
 
+{% raw %}
 jobs:
   find-pull-request:
     uses: ProjectPythia/cookbook-actions/.github/workflows/find-pull-request.yaml@main
@@ -25,3 +26,4 @@ jobs:
     with:
       pull_request_number: ${{ needs.find-pull-request.outputs.number }}
       sha: ${{ needs.find-pull-request.outputs.sha }}
+{% endraw %}

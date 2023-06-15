@@ -7,11 +7,11 @@ on:
 
 jobs:
   build:
-    if: ${{ github.repository_owner == '{{ cookiecutter.github_org }}' }}
+    if: ${{ '{{' }} github.repository_owner == '{{ cookiecutter.github_org }}' {{ '}}' }}
     uses: ProjectPythia/cookbook-actions/.github/workflows/build-book.yaml@main
     with:
       environment_name: {{ cookiecutter.environment_name }}
 
   link-check:
-    if: ${{ github.repository_owner == '{{ cookiecutter.github_org }}' }}
+    if: ${{ '{{' }} github.repository_owner == '{{ cookiecutter.github_org }}' {{ '}}' }}
     uses: ProjectPythia/cookbook-actions/.github/workflows/link-checker.yaml@main

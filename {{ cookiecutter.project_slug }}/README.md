@@ -3,7 +3,7 @@
 # {{ cookiecutter.project_name }}
 
 [![nightly-build]({{ cookiecutter.repo_url }}/actions/workflows/nightly-build.yaml/badge.svg)]({{ cookiecutter.repo_url }}/actions/workflows/nightly-build.yaml)
-[![Binder](https://binder.projectpythia.org/badge_logo.svg)](https://binder.projectpythia.org/v2/gh/{{ cookiecutter.github_org }}/{{ cookiecutter.cookbook_slug }}/main?labpath=notebooks)
+[![Binder](https://binder.projectpythia.org/badge_logo.svg)](https://binder.projectpythia.org/v2/gh/{{ cookiecutter.github_org }}/{{ cookiecutter.repo_name }}/main?labpath=notebooks)
 
 This Project Pythia Cookbook covers ... (replace `...` with the main subject of your cookbook ... e.g., _working with radar data in Python_)
 
@@ -18,7 +18,7 @@ This Project Pythia Cookbook covers ... (replace `...` with the main subject of 
 ### Contributors
 
 <a href="{{ cookiecutter.repo_url }}/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo={{ cookiecutter.github_org }}/{{ cookiecutter.cookbook_slug }}" />
+  <img src="https://contrib.rocks/image?repo={{ cookiecutter.github_org }}/{{ cookiecutter.repo_name }}" />
 </a>
 
 ## Structure
@@ -65,9 +65,9 @@ If you are interested in running this material locally on your computer, you wil
     git clone {{ cookiecutter.repo_url }}.git
    ```
 
-1. Move into the `{{ cookiecutter.cookbook_slug }}` directory
+1. Move into the `{{ cookiecutter.repo_name }}` directory
    ```bash
-   cd {{ cookiecutter.cookbook_slug }}
+   cd {{ cookiecutter.repo_name }}
    ```
 1. Create and activate your conda environment from the `environment.yml` file
    ```bash

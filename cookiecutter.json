@@ -1,14 +1,15 @@
 {
-    "cookbook_name": "Cookbook Template",
-    "cookbook_slug": "{{ cookiecutter.cookbook_name.lower().replace(' ', '_').replace('-', '_') }}",
+    "project_name": "Cookbook Template",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
     "email": "projectpythia@ucar.edu",
     "github_org": "ProjectPythia",
-    "repo_url": "https://github.com/{{ cookiecutter.github_org }}/{{ cookiecutter.cookbook_slug }}",
+    "repo_name": "{{ cookiecutter.project_slug }}",
+    "repo_url": "https://github.com/{{ cookiecutter.github_org }}/{{ cookiecutter.repo_name }}",
     "environment_name": "cookbook-dev",
     "first_author_name": "First Author",
     "first_author_github_username": "first-author",
     "second_author_name": "Second Author",
     "second_author_github_username": "second-author",
     "short_description": "A sample cookbook description.",
-    "copyright_name": "the <a href="https://projectpythia.org/">Project Pythia</a> Community",
+    "copyright_name": "the Project Pythia Community"
   }
